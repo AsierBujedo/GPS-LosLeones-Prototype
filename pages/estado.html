@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang = 'es'>
+    <head> <!--HEAD-->
+        <meta charset="utf-8">
+        <title>Estado</title>
+        <link rel="stylesheet" href="../fonts/styles.css">
+        <link rel="stylesheet" href="../fonts/common.css">
+        <link rel="stylesheet" href="../fonts/progress.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="../interaction/interact.js"></script>
+        <script src="../interaction/progress.js"></script>
+    </head>
+    <body>
+        <!--CABEZERA, CONTIENE LA BARRA DE NAVEGACIÓN-->
+        <header id="cabeza-main">
+            <div class="navbar">   
+                <div id="element1">
+                    <a href="../index.html">Inicio</a>
+                </div><div id="element2">
+                    <a href="cliente.html">Soy cliente</a>
+                </div><div class="element3">
+                    <a href="perito.html">Soy Perito</a>
+                </div><div class="element4">
+                    <a class="active" href="estado.html">Estado de la solicitud</a>
+              </div>
+        </header>
+
+        <!--MAIN-CUERPO; CONTIENE EL FORMULARIO DE LA PÁGINA-->
+        <main class="cuerpo-contacto">
+            <br>
+            <div class="container">
+                <!-- Responsive Arrow Progress Bar -->
+                <div class="arrow-steps clearfix">
+                  <div class="step current"> <span> <a href="#" >En trámite</a></span> </div>
+                  <div class="step"> <span><a href="#" >Abierta</a></span> </div>
+                  <div class="step"> <span><a href="#" >Asignada a perito</a><span> </div>
+                  <div class="step"> <span><a href="#" >En evaluación</a><span> </div>
+                  <div class="step"> <span><a href="#" >En proceso de resolución</a><span> </div>
+                  <div class="step"> <span><a href="#" >Resuelta</a><span> </div>
+                </div>
+                <!-- end Responsive Arrow Progress Bar -->
+                <div class="nav clearfix">
+                  <a href="#" class="prev">Anterior</a>
+                  <a href="#" class="next pull-right">Siguiente</a>
+                </div>
+              </div><div>
+                <br>
+                <form>
+                  <h3>Ingrese la referencia para ver el estado de su solicitud:</h3><br>
+                <input type="text" id="id" placeholder="Referencia" required><br><br>
+                <div class="container"><!--BOTÓN ANIMADO (CSS) PARA ENVÍO-->
+                  <button>
+                      <span id="send">Enviar</span>
+                  </button>
+              </div>
+                <strong>Estado de su solicitud: </strong><div id = "text"></div><br><br>
+                <div>
+                  <h4>¿Desea enviar el estado de su solicitud a su correo?</h4><br>
+                  <h4>Haga click en el botón y se lo enviaremos al correo que nos proporcionó en el formulario de solicitud.</h4><br><br>
+                  <div class="container"><!--BOTÓN ANIMADO (CSS) PARA ENVÍO-->
+                    <button>
+                        <span id="send">Enviar</span>
+                    </button><br><br>
+                </div>
+                </div><br><br>
+                <br>¡Muchas gracias por su confianza!<br><br>
+                <br>
+              </div>
+            </form>
+            <br>
+        </main>
+
+        <!--FOOTER CON TODAS LAS REDES SOCIALES-->
+        <footer class="pie-main">
+          <div class="wrapper">
+            <h3>Nos puedes encontrar en: </h3>
+            <a href="https://www.facebook.com/" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://www.twitter.com/" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="https://www.instagram.com/" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="https://www.youtube.com/" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+            <br><br><p>© 2023 - Todos los derechos reservados</p>
+          </div>
+        </footer>
+    </body>
+</html>
